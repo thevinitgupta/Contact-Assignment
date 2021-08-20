@@ -252,3 +252,40 @@ body {
     transform: scale(1.05);
   }
 }
+
+@media screen and (max-width:720px) {
+  .contact-page{
+    flex-direction: column;
+  }
+  .contact-us ,.contact-details {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .navbar{
+    width: 70vw;
+  }
+  .menu-icon{
+    color: #fff;
+  }
+  .contact-page{
+    flex-direction: column;
+  }
+  .notification{
+    display: none;
+  }
+  .contact-us ,.contact-details {
+    width: 75vw;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .navbar{
+    width: 80vw;
+  }
+  .contact-us ,.contact-details {
+    width: 80vw;
+  }
+}
