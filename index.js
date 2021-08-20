@@ -1,6 +1,7 @@
 let menuList = document.querySelectorAll(".menu-list");
 let navbar = document.querySelector(".navbar");
 let menuIcon = document.querySelector(".menu-icon");
+let closeMenu = document.querySelector(".close-menu")
 //console.log(navbar.classList.add("navbar-hidden"))
 if(window.innerWidth < 950){
     navbar.style.left = "-46vw";
@@ -15,9 +16,15 @@ menuList.forEach((listItem,index)=>{
     }
 })
 
-menuIcon.addEventListener("click",openNav)
+menuIcon.addEventListener("click",openNav);
+closeMenu.addEventListener("click",closeNav)
 
 function openNav() {
     console.log("Menu Open");
     navbar.style.left = "0";
+}
+
+function closeNav(){
+    console.log("Menu Open");
+    navbar.style.left = "-46vw";
 }
